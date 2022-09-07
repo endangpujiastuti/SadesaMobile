@@ -71,23 +71,29 @@ public static void initializeProcessGlobals() {
 	    main.processGlobalsRun = true;
 		try {
 		        main_subs_0._process_globals();
-actopsi_subs_0._process_globals();
 actlogin_subs_0._process_globals();
-modulkoneksi_subs_0._process_globals();
 actberanda_subs_0._process_globals();
 actregister_subs_0._process_globals();
 actlupakatasandi_subs_0._process_globals();
 starter_subs_0._process_globals();
 akunpenduduk_subs_0._process_globals();
+modulkoneksi_subs_0._process_globals();
+datapenduduk_subs_0._process_globals();
+tambahdatajenisdokumen_subs_0._process_globals();
+pengajuan_subs_0._process_globals();
+opsilainya_subs_0._process_globals();
 main.myClass = BA.getDeviceClass ("b4a.example.main");
-actopsi.myClass = BA.getDeviceClass ("b4a.example.actopsi");
 actlogin.myClass = BA.getDeviceClass ("b4a.example.actlogin");
-modulkoneksi.myClass = BA.getDeviceClass ("b4a.example.modulkoneksi");
 actberanda.myClass = BA.getDeviceClass ("b4a.example.actberanda");
 actregister.myClass = BA.getDeviceClass ("b4a.example.actregister");
 actlupakatasandi.myClass = BA.getDeviceClass ("b4a.example.actlupakatasandi");
 starter.myClass = BA.getDeviceClass ("b4a.example.starter");
 akunpenduduk.myClass = BA.getDeviceClass ("b4a.example.akunpenduduk");
+modulkoneksi.myClass = BA.getDeviceClass ("b4a.example.modulkoneksi");
+datapenduduk.myClass = BA.getDeviceClass ("b4a.example.datapenduduk");
+tambahdatajenisdokumen.myClass = BA.getDeviceClass ("b4a.example.tambahdatajenisdokumen");
+pengajuan.myClass = BA.getDeviceClass ("b4a.example.pengajuan");
+opsilainya.myClass = BA.getDeviceClass ("b4a.example.opsilainya");
 		
         } catch (Exception e) {
 			throw new RuntimeException(e);
@@ -106,9 +112,9 @@ try {
 if (RapidSub.canDelegate("signin_click")) { return b4a.example.main.remoteMe.runUserSub(false, "main","signin_click");}
  BA.debugLineNum = 39;BA.debugLine="Private Sub SignIn_Click";
 Debug.ShouldStop(64);
- BA.debugLineNum = 41;BA.debugLine="StartActivity(actOpsi)";
+ BA.debugLineNum = 41;BA.debugLine="StartActivity(actLogin)";
 Debug.ShouldStop(256);
-main.mostCurrent.__c.runVoidMethod ("StartActivity",main.processBA,(Object)((main.mostCurrent._actopsi.getObject())));
+main.mostCurrent.__c.runVoidMethod ("StartActivity",main.processBA,(Object)((main.mostCurrent._actlogin.getObject())));
  BA.debugLineNum = 42;BA.debugLine="End Sub";
 Debug.ShouldStop(512);
 return RemoteObject.createImmutable("");

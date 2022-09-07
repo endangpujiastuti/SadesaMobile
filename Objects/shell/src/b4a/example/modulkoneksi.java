@@ -48,14 +48,17 @@ public static RemoteObject __c = RemoteObject.declareNull("anywheresoftware.b4a.
 public static RemoteObject _mh = RemoteObject.declareNull("mysql.mysqlhandler");
 public static RemoteObject _rs = RemoteObject.declareNull("mysql.mysqlhandler.ResultSetWrapper");
 public static b4a.example.main _main = null;
-public static b4a.example.actopsi _actopsi = null;
 public static b4a.example.actlogin _actlogin = null;
 public static b4a.example.actberanda _actberanda = null;
 public static b4a.example.actregister _actregister = null;
 public static b4a.example.actlupakatasandi _actlupakatasandi = null;
 public static b4a.example.starter _starter = null;
 public static b4a.example.akunpenduduk _akunpenduduk = null;
+public static b4a.example.datapenduduk _datapenduduk = null;
+public static b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public static b4a.example.pengajuan _pengajuan = null;
+public static b4a.example.opsilainya _opsilainya = null;
   public Object[] GetGlobals() {
-		return new Object[] {"actBeranda",Debug.moduleToString(b4a.example.actberanda.class),"actLogin",Debug.moduleToString(b4a.example.actlogin.class),"actLupaKataSandi",Debug.moduleToString(b4a.example.actlupakatasandi.class),"actOpsi",Debug.moduleToString(b4a.example.actopsi.class),"actRegister",Debug.moduleToString(b4a.example.actregister.class),"AkunPenduduk",Debug.moduleToString(b4a.example.akunpenduduk.class),"Main",Debug.moduleToString(b4a.example.main.class),"mh",modulkoneksi._mh,"rs",modulkoneksi._rs,"Starter",Debug.moduleToString(b4a.example.starter.class)};
+		return new Object[] {"actBeranda",Debug.moduleToString(b4a.example.actberanda.class),"actLogin",Debug.moduleToString(b4a.example.actlogin.class),"actLupaKataSandi",Debug.moduleToString(b4a.example.actlupakatasandi.class),"actRegister",Debug.moduleToString(b4a.example.actregister.class),"AkunPenduduk",Debug.moduleToString(b4a.example.akunpenduduk.class),"DataPenduduk",Debug.moduleToString(b4a.example.datapenduduk.class),"Main",Debug.moduleToString(b4a.example.main.class),"mh",modulkoneksi._mh,"OpsiLainya",Debug.moduleToString(b4a.example.opsilainya.class),"Pengajuan",Debug.moduleToString(b4a.example.pengajuan.class),"rs",modulkoneksi._rs,"Starter",Debug.moduleToString(b4a.example.starter.class),"TambahDataJenisDokumen",Debug.moduleToString(b4a.example.tambahdatajenisdokumen.class)};
 }
 }

@@ -8,7 +8,7 @@ public class actlogin_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firesultsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,27);
+		Debug.PushSubsStack("Activity_Create (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,27);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","activity_create", _firesultsttime);}
 Debug.locals.put("FiResultStTime", _firesultsttime);
  BA.debugLineNum = 27;BA.debugLine="Sub Activity_Create(FiResultStTime As Boolean)";
@@ -28,7 +28,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,36);
+		Debug.PushSubsStack("Activity_Pause (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,36);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 36;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -45,7 +45,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,32);
+		Debug.PushSubsStack("Activity_Resume (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,32);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","activity_resume");}
  BA.debugLineNum = 32;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(-2147483648);
@@ -61,7 +61,7 @@ finally {
 		}}
 public static RemoteObject  _btnlogin_click() throws Exception{
 try {
-		Debug.PushSubsStack("BtnLogin_Click (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,50);
+		Debug.PushSubsStack("BtnLogin_Click (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,50);
 if (RapidSub.canDelegate("btnlogin_click")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","btnlogin_click");}
  BA.debugLineNum = 50;BA.debugLine="Private Sub BtnLogin_Click";
 Debug.ShouldStop(131072);
@@ -112,9 +112,9 @@ actlogin.mostCurrent._modulkoneksi._mh /*RemoteObject*/ .runVoidMethod ("Close")
  BA.debugLineNum = 76;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(2048);
 actlogin.mostCurrent._activity.runVoidMethod ("Finish");
- BA.debugLineNum = 77;BA.debugLine="StartActivity(AkunPenduduk)";
+ BA.debugLineNum = 77;BA.debugLine="StartActivity(OpsiLainya)";
 Debug.ShouldStop(4096);
-actlogin.mostCurrent.__c.runVoidMethod ("StartActivity",actlogin.processBA,(Object)((actlogin.mostCurrent._akunpenduduk.getObject())));
+actlogin.mostCurrent.__c.runVoidMethod ("StartActivity",actlogin.processBA,(Object)((actlogin.mostCurrent._opsilainya.getObject())));
  }else {
  BA.debugLineNum = 79;BA.debugLine="MsgboxAsync(\"Password tidak ditemukan\",\"Info\")";
 Debug.ShouldStop(16384);
@@ -149,7 +149,7 @@ finally {
 		}}
 public static RemoteObject  _btnregis_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnRegis_Click (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,41);
+		Debug.PushSubsStack("btnRegis_Click (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,41);
 if (RapidSub.canDelegate("btnregis_click")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","btnregis_click");}
  BA.debugLineNum = 41;BA.debugLine="Sub btnRegis_Click";
 Debug.ShouldStop(256);
@@ -168,7 +168,7 @@ finally {
 		}}
 public static RemoteObject  _btnresetsandi_click() throws Exception{
 try {
-		Debug.PushSubsStack("BtnResetSandi_Click (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,46);
+		Debug.PushSubsStack("BtnResetSandi_Click (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,46);
 if (RapidSub.canDelegate("btnresetsandi_click")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","btnresetsandi_click");}
  BA.debugLineNum = 46;BA.debugLine="Sub BtnResetSandi_Click";
 Debug.ShouldStop(8192);
@@ -185,9 +185,33 @@ catch (Exception e) {
 finally {
 			Debug.PopSubsStack();
 		}}
+public static RemoteObject  _checkboxlupasandi_checkedchange(RemoteObject _checked) throws Exception{
+try {
+		Debug.PushSubsStack("CheckBoxLupaSandi_CheckedChange (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,95);
+if (RapidSub.canDelegate("checkboxlupasandi_checkedchange")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","checkboxlupasandi_checkedchange", _checked);}
+Debug.locals.put("Checked", _checked);
+ BA.debugLineNum = 95;BA.debugLine="Private Sub CheckBoxLupaSandi_CheckedChange (Check";
+Debug.ShouldStop(1073741824);
+ BA.debugLineNum = 96;BA.debugLine="If Checked = True Then";
+Debug.ShouldStop(-2147483648);
+if (RemoteObject.solveBoolean("=",_checked,actlogin.mostCurrent.__c.getField(true,"True"))) { 
+ BA.debugLineNum = 97;BA.debugLine="txtpass.Text = \" CheckBoxLupaSandi qualified \"";
+Debug.ShouldStop(1);
+actlogin.mostCurrent._txtpass.runMethodAndSync(true,"setText",BA.ObjectToCharSequence(" CheckBoxLupaSandi qualified "));
+ };
+ BA.debugLineNum = 99;BA.debugLine="End Sub";
+Debug.ShouldStop(4);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static RemoteObject  _enkripsi() throws Exception{
 try {
-		Debug.PushSubsStack("enkripsi (actlogin) ","actlogin",2,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,90);
+		Debug.PushSubsStack("enkripsi (actlogin) ","actlogin",1,actlogin.mostCurrent.activityBA,actlogin.mostCurrent,90);
 if (RapidSub.canDelegate("enkripsi")) { return b4a.example.actlogin.remoteMe.runUserSub(false, "actlogin","enkripsi");}
  BA.debugLineNum = 90;BA.debugLine="Sub enkripsi";
 Debug.ShouldStop(33554432);

@@ -347,52 +347,55 @@ public static void initializeProcessGlobals() {
 public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btnhubadmin = null;
 public b4a.example.main _main = null;
-public b4a.example.actopsi _actopsi = null;
 public b4a.example.actlogin _actlogin = null;
-public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
+public b4a.example.modulkoneksi _modulkoneksi = null;
+public b4a.example.datapenduduk _datapenduduk = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.pengajuan _pengajuan = null;
+public b4a.example.opsilainya _opsilainya = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="actlupakatasandi";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=2424832;
- //BA.debugLineNum = 2424832;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=2424834;
- //BA.debugLineNum = 2424834;BA.debugLine="Activity.LoadLayout(\"LupaKataSandi\")";
+RDebugUtils.currentLine=1900544;
+ //BA.debugLineNum = 1900544;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=1900546;
+ //BA.debugLineNum = 1900546;BA.debugLine="Activity.LoadLayout(\"LupaKataSandi\")";
 mostCurrent._activity.LoadLayout("LupaKataSandi",mostCurrent.activityBA);
-RDebugUtils.currentLine=2424835;
- //BA.debugLineNum = 2424835;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1900547;
+ //BA.debugLineNum = 1900547;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="actlupakatasandi";
-RDebugUtils.currentLine=2555904;
- //BA.debugLineNum = 2555904;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=2555906;
- //BA.debugLineNum = 2555906;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2031616;
+ //BA.debugLineNum = 2031616;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=2031618;
+ //BA.debugLineNum = 2031618;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="actlupakatasandi";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=2490368;
- //BA.debugLineNum = 2490368;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=2490370;
- //BA.debugLineNum = 2490370;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1966080;
+ //BA.debugLineNum = 1966080;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=1966082;
+ //BA.debugLineNum = 1966082;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnhubadmin_click() throws Exception{
 RDebugUtils.currentModule="actlupakatasandi";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnhubadmin_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnhubadmin_click", null));}
-RDebugUtils.currentLine=2621440;
- //BA.debugLineNum = 2621440;BA.debugLine="Private Sub BtnHubAdmin_Click";
-RDebugUtils.currentLine=2621442;
- //BA.debugLineNum = 2621442;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2097152;
+ //BA.debugLineNum = 2097152;BA.debugLine="Private Sub BtnHubAdmin_Click";
+RDebugUtils.currentLine=2097154;
+ //BA.debugLineNum = 2097154;BA.debugLine="End Sub";
 return "";
 }
 }

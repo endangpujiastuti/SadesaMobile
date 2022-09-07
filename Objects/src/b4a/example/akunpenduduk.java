@@ -355,42 +355,45 @@ public anywheresoftware.b4a.objects.EditTextWrapper _txtpwd = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btnsave = null;
 public anywheresoftware.b4a.objects.SpinnerWrapper _spnnik = null;
 public b4a.example.main _main = null;
-public b4a.example.actopsi _actopsi = null;
 public b4a.example.actlogin _actlogin = null;
-public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
 public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
+public b4a.example.modulkoneksi _modulkoneksi = null;
+public b4a.example.datapenduduk _datapenduduk = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.pengajuan _pengajuan = null;
+public b4a.example.opsilainya _opsilainya = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=3211264;
- //BA.debugLineNum = 3211264;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=3211265;
- //BA.debugLineNum = 3211265;BA.debugLine="Activity.LoadLayout(\"AkunWarga\")";
+RDebugUtils.currentLine=2686976;
+ //BA.debugLineNum = 2686976;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=2686977;
+ //BA.debugLineNum = 2686977;BA.debugLine="Activity.LoadLayout(\"AkunWarga\")";
 mostCurrent._activity.LoadLayout("AkunWarga",mostCurrent.activityBA);
-RDebugUtils.currentLine=3211267;
- //BA.debugLineNum = 3211267;BA.debugLine="showList";
+RDebugUtils.currentLine=2686979;
+ //BA.debugLineNum = 2686979;BA.debugLine="showList";
 _showlist();
-RDebugUtils.currentLine=3211269;
- //BA.debugLineNum = 3211269;BA.debugLine="isiSpinner";
+RDebugUtils.currentLine=2686981;
+ //BA.debugLineNum = 2686981;BA.debugLine="isiSpinner";
 _isispinner();
-RDebugUtils.currentLine=3211271;
- //BA.debugLineNum = 3211271;BA.debugLine="lv.TwoLinesLayout.Label.TextColor = Colors.Black";
+RDebugUtils.currentLine=2686983;
+ //BA.debugLineNum = 2686983;BA.debugLine="lv.TwoLinesLayout.Label.TextColor = Colors.Black";
 mostCurrent._lv.getTwoLinesLayout().Label.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.Black);
-RDebugUtils.currentLine=3211272;
- //BA.debugLineNum = 3211272;BA.debugLine="lv.TwoLinesLayout.Label.TextSize = 15";
+RDebugUtils.currentLine=2686984;
+ //BA.debugLineNum = 2686984;BA.debugLine="lv.TwoLinesLayout.Label.TextSize = 15";
 mostCurrent._lv.getTwoLinesLayout().Label.setTextSize((float) (15));
-RDebugUtils.currentLine=3211274;
- //BA.debugLineNum = 3211274;BA.debugLine="pnlakun.Visible = True";
+RDebugUtils.currentLine=2686986;
+ //BA.debugLineNum = 2686986;BA.debugLine="pnlakun.Visible = True";
 mostCurrent._pnlakun.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3211275;
- //BA.debugLineNum = 3211275;BA.debugLine="pnladd.Visible = False";
+RDebugUtils.currentLine=2686987;
+ //BA.debugLineNum = 2686987;BA.debugLine="pnladd.Visible = False";
 mostCurrent._pnladd.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=3211277;
- //BA.debugLineNum = 3211277;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2686989;
+ //BA.debugLineNum = 2686989;BA.debugLine="End Sub";
 return "";
 }
 public static String  _showlist() throws Exception{
@@ -398,214 +401,214 @@ RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "showlist", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "showlist", null));}
 int _i = 0;
-RDebugUtils.currentLine=3473408;
- //BA.debugLineNum = 3473408;BA.debugLine="Sub showList";
-RDebugUtils.currentLine=3473409;
- //BA.debugLineNum = 3473409;BA.debugLine="ModulKoneksi.koneksi";
+RDebugUtils.currentLine=2949120;
+ //BA.debugLineNum = 2949120;BA.debugLine="Sub showList";
+RDebugUtils.currentLine=2949121;
+ //BA.debugLineNum = 2949121;BA.debugLine="ModulKoneksi.koneksi";
 mostCurrent._modulkoneksi._koneksi /*String*/ (mostCurrent.activityBA);
-RDebugUtils.currentLine=3473411;
- //BA.debugLineNum = 3473411;BA.debugLine="lv.Clear";
+RDebugUtils.currentLine=2949123;
+ //BA.debugLineNum = 2949123;BA.debugLine="lv.Clear";
 mostCurrent._lv.Clear();
-RDebugUtils.currentLine=3473412;
- //BA.debugLineNum = 3473412;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
+RDebugUtils.currentLine=2949124;
+ //BA.debugLineNum = 2949124;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
 mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/  = (mysql.mysqlhandler.ResultSetWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new mysql.mysqlhandler.ResultSetWrapper(), (java.sql.ResultSet)(mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Query("SELECT * FROM tb_akunwarga ORDER BY id_akun_warga ASC")));
-RDebugUtils.currentLine=3473414;
- //BA.debugLineNum = 3473414;BA.debugLine="For i = 0 To ModulKoneksi.rs.RowCount - 1";
+RDebugUtils.currentLine=2949126;
+ //BA.debugLineNum = 2949126;BA.debugLine="For i = 0 To ModulKoneksi.rs.RowCount - 1";
 {
 final int step4 = 1;
 final int limit4 = (int) (mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .RowCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit4 ;_i = _i + step4 ) {
-RDebugUtils.currentLine=3473415;
- //BA.debugLineNum = 3473415;BA.debugLine="ModulKoneksi.rs.Position  = i";
+RDebugUtils.currentLine=2949127;
+ //BA.debugLineNum = 2949127;BA.debugLine="ModulKoneksi.rs.Position  = i";
 mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .setPosition(_i);
-RDebugUtils.currentLine=3473416;
- //BA.debugLineNum = 3473416;BA.debugLine="lv.AddTwoLines(ModulKoneksi.rs.GetString2(\"id_ak";
+RDebugUtils.currentLine=2949128;
+ //BA.debugLineNum = 2949128;BA.debugLine="lv.AddTwoLines(ModulKoneksi.rs.GetString2(\"id_ak";
 mostCurrent._lv.AddTwoLines(BA.ObjectToCharSequence(mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .GetString2("id_akun_warga")),BA.ObjectToCharSequence(mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .GetString2("username")));
  }
 };
-RDebugUtils.currentLine=3473419;
- //BA.debugLineNum = 3473419;BA.debugLine="ModulKoneksi.mh.Close";
+RDebugUtils.currentLine=2949131;
+ //BA.debugLineNum = 2949131;BA.debugLine="ModulKoneksi.mh.Close";
 mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Close();
-RDebugUtils.currentLine=3473420;
- //BA.debugLineNum = 3473420;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2949132;
+ //BA.debugLineNum = 2949132;BA.debugLine="End Sub";
 return "";
 }
 public static String  _isispinner() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "isispinner", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "isispinner", null));}
-RDebugUtils.currentLine=3735552;
- //BA.debugLineNum = 3735552;BA.debugLine="Sub isiSpinner";
-RDebugUtils.currentLine=3735553;
- //BA.debugLineNum = 3735553;BA.debugLine="spnnik.Clear";
+RDebugUtils.currentLine=3211264;
+ //BA.debugLineNum = 3211264;BA.debugLine="Sub isiSpinner";
+RDebugUtils.currentLine=3211265;
+ //BA.debugLineNum = 3211265;BA.debugLine="spnnik.Clear";
 mostCurrent._spnnik.Clear();
-RDebugUtils.currentLine=3735554;
- //BA.debugLineNum = 3735554;BA.debugLine="spnnik.AddAll(Array As String(\"Data 1\",\"Data 2\",\"";
-mostCurrent._spnnik.AddAll(anywheresoftware.b4a.keywords.Common.ArrayToList(new String[]{"Data 1","Data 2","Data 3","Data 4"}));
-RDebugUtils.currentLine=3735555;
- //BA.debugLineNum = 3735555;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3211266;
+ //BA.debugLineNum = 3211266;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
+mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/  = (mysql.mysqlhandler.ResultSetWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new mysql.mysqlhandler.ResultSetWrapper(), (java.sql.ResultSet)(mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Query("SELECT * FROM tb_akunwarga ORDER BY id_akun_warga ASC")));
+RDebugUtils.currentLine=3211267;
+ //BA.debugLineNum = 3211267;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
-RDebugUtils.currentLine=3342336;
- //BA.debugLineNum = 3342336;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=3342338;
- //BA.debugLineNum = 3342338;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2818048;
+ //BA.debugLineNum = 2818048;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=2818050;
+ //BA.debugLineNum = 2818050;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=3276800;
- //BA.debugLineNum = 3276800;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=3276802;
- //BA.debugLineNum = 3276802;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2752512;
+ //BA.debugLineNum = 2752512;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=2752514;
+ //BA.debugLineNum = 2752514;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnadd_click() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnadd_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnadd_click", null));}
-RDebugUtils.currentLine=3604480;
- //BA.debugLineNum = 3604480;BA.debugLine="Private Sub btnadd_Click";
-RDebugUtils.currentLine=3604481;
- //BA.debugLineNum = 3604481;BA.debugLine="pnlakun.Visible = False";
+RDebugUtils.currentLine=3080192;
+ //BA.debugLineNum = 3080192;BA.debugLine="Private Sub btnadd_Click";
+RDebugUtils.currentLine=3080193;
+ //BA.debugLineNum = 3080193;BA.debugLine="pnlakun.Visible = False";
 mostCurrent._pnlakun.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=3604482;
- //BA.debugLineNum = 3604482;BA.debugLine="pnladd.Visible = True";
+RDebugUtils.currentLine=3080194;
+ //BA.debugLineNum = 3080194;BA.debugLine="pnladd.Visible = True";
 mostCurrent._pnladd.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3604483;
- //BA.debugLineNum = 3604483;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3080195;
+ //BA.debugLineNum = 3080195;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnback_click() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnback_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnback_click", null));}
-RDebugUtils.currentLine=3670016;
- //BA.debugLineNum = 3670016;BA.debugLine="Private Sub btnBack_Click";
-RDebugUtils.currentLine=3670018;
- //BA.debugLineNum = 3670018;BA.debugLine="pnlakun.Visible = True";
+RDebugUtils.currentLine=3145728;
+ //BA.debugLineNum = 3145728;BA.debugLine="Private Sub btnBack_Click";
+RDebugUtils.currentLine=3145730;
+ //BA.debugLineNum = 3145730;BA.debugLine="pnlakun.Visible = True";
 mostCurrent._pnlakun.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3670019;
- //BA.debugLineNum = 3670019;BA.debugLine="pnladd.Visible = False";
+RDebugUtils.currentLine=3145731;
+ //BA.debugLineNum = 3145731;BA.debugLine="pnladd.Visible = False";
 mostCurrent._pnladd.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=3670020;
- //BA.debugLineNum = 3670020;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3145732;
+ //BA.debugLineNum = 3145732;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnkembali_click() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnkembali_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnkembali_click", null));}
-RDebugUtils.currentLine=3932160;
- //BA.debugLineNum = 3932160;BA.debugLine="Private Sub btnkembali_Click";
-RDebugUtils.currentLine=3932161;
- //BA.debugLineNum = 3932161;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=3407872;
+ //BA.debugLineNum = 3407872;BA.debugLine="Private Sub btnkembali_Click";
+RDebugUtils.currentLine=3407873;
+ //BA.debugLineNum = 3407873;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=3932162;
- //BA.debugLineNum = 3932162;BA.debugLine="StartActivity(actBeranda)";
+RDebugUtils.currentLine=3407874;
+ //BA.debugLineNum = 3407874;BA.debugLine="StartActivity(actBeranda)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actberanda.getObject()));
-RDebugUtils.currentLine=3932163;
- //BA.debugLineNum = 3932163;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3407875;
+ //BA.debugLineNum = 3407875;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnsave_click() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnsave_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnsave_click", null));}
-RDebugUtils.currentLine=3801088;
- //BA.debugLineNum = 3801088;BA.debugLine="Private Sub btnSave_Click";
-RDebugUtils.currentLine=3801090;
- //BA.debugLineNum = 3801090;BA.debugLine="If spnnik.SelectedItem = \"\" Then";
+RDebugUtils.currentLine=3276800;
+ //BA.debugLineNum = 3276800;BA.debugLine="Private Sub btnSave_Click";
+RDebugUtils.currentLine=3276802;
+ //BA.debugLineNum = 3276802;BA.debugLine="If spnnik.SelectedItem = \"\" Then";
 if ((mostCurrent._spnnik.getSelectedItem()).equals("")) { 
-RDebugUtils.currentLine=3801091;
- //BA.debugLineNum = 3801091;BA.debugLine="MsgboxAsync(\"Masukkan NIK | Nama Lengkap\",\"Info\"";
+RDebugUtils.currentLine=3276803;
+ //BA.debugLineNum = 3276803;BA.debugLine="MsgboxAsync(\"Masukkan NIK | Nama Lengkap\",\"Info\"";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Masukkan NIK | Nama Lengkap"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=3801092;
- //BA.debugLineNum = 3801092;BA.debugLine="Return";
+RDebugUtils.currentLine=3276804;
+ //BA.debugLineNum = 3276804;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=3801095;
- //BA.debugLineNum = 3801095;BA.debugLine="If txtnmpengguna.Text = \"\" Then";
+RDebugUtils.currentLine=3276807;
+ //BA.debugLineNum = 3276807;BA.debugLine="If txtnmpengguna.Text = \"\" Then";
 if ((mostCurrent._txtnmpengguna.getText()).equals("")) { 
-RDebugUtils.currentLine=3801096;
- //BA.debugLineNum = 3801096;BA.debugLine="MsgboxAsync(\"Masukkan Nama Pengguna\",\"Info\")";
+RDebugUtils.currentLine=3276808;
+ //BA.debugLineNum = 3276808;BA.debugLine="MsgboxAsync(\"Masukkan Nama Pengguna\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Masukkan Nama Pengguna"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=3801097;
- //BA.debugLineNum = 3801097;BA.debugLine="Return";
+RDebugUtils.currentLine=3276809;
+ //BA.debugLineNum = 3276809;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=3801100;
- //BA.debugLineNum = 3801100;BA.debugLine="If txtpwd.Text = \"\" Then";
+RDebugUtils.currentLine=3276812;
+ //BA.debugLineNum = 3276812;BA.debugLine="If txtpwd.Text = \"\" Then";
 if ((mostCurrent._txtpwd.getText()).equals("")) { 
-RDebugUtils.currentLine=3801101;
- //BA.debugLineNum = 3801101;BA.debugLine="MsgboxAsync(\"Masukkan Password\",\"Info\")";
+RDebugUtils.currentLine=3276813;
+ //BA.debugLineNum = 3276813;BA.debugLine="MsgboxAsync(\"Masukkan Password\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Masukkan Password"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=3801102;
- //BA.debugLineNum = 3801102;BA.debugLine="Return";
+RDebugUtils.currentLine=3276814;
+ //BA.debugLineNum = 3276814;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=3801105;
- //BA.debugLineNum = 3801105;BA.debugLine="If btnSave.Text = \"Simpan\" Then";
+RDebugUtils.currentLine=3276817;
+ //BA.debugLineNum = 3276817;BA.debugLine="If btnSave.Text = \"Simpan\" Then";
 if ((mostCurrent._btnsave.getText()).equals("Simpan")) { 
-RDebugUtils.currentLine=3801107;
- //BA.debugLineNum = 3801107;BA.debugLine="ModulKoneksi.koneksi";
+RDebugUtils.currentLine=3276819;
+ //BA.debugLineNum = 3276819;BA.debugLine="ModulKoneksi.koneksi";
 mostCurrent._modulkoneksi._koneksi /*String*/ (mostCurrent.activityBA);
-RDebugUtils.currentLine=3801110;
- //BA.debugLineNum = 3801110;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT";
+RDebugUtils.currentLine=3276822;
+ //BA.debugLineNum = 3276822;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT";
 mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/  = (mysql.mysqlhandler.ResultSetWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new mysql.mysqlhandler.ResultSetWrapper(), (java.sql.ResultSet)(mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Query("SELECT * FROM tb_akunwarga WHERE username='"+BA.NumberToString(mostCurrent._spnnik.getSelectedIndex())+"'")));
-RDebugUtils.currentLine=3801111;
- //BA.debugLineNum = 3801111;BA.debugLine="If ModulKoneksi.rs.RowCount > 0 Then";
+RDebugUtils.currentLine=3276823;
+ //BA.debugLineNum = 3276823;BA.debugLine="If ModulKoneksi.rs.RowCount > 0 Then";
 if (mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .RowCount()>0) { 
-RDebugUtils.currentLine=3801112;
- //BA.debugLineNum = 3801112;BA.debugLine="MsgboxAsync(\"Akun telah digunakan\",\"Info\")";
+RDebugUtils.currentLine=3276824;
+ //BA.debugLineNum = 3276824;BA.debugLine="MsgboxAsync(\"Akun telah digunakan\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Akun telah digunakan"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=3801113;
- //BA.debugLineNum = 3801113;BA.debugLine="Return";
+RDebugUtils.currentLine=3276825;
+ //BA.debugLineNum = 3276825;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=3801117;
- //BA.debugLineNum = 3801117;BA.debugLine="ModulKoneksi.mh.Exec(\"INSERT INTO tb_akunwarga V";
+RDebugUtils.currentLine=3276829;
+ //BA.debugLineNum = 3276829;BA.debugLine="ModulKoneksi.mh.Exec(\"INSERT INTO tb_akunwarga V";
 mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Exec("INSERT INTO tb_akunwarga VALUES('"+BA.NumberToString(mostCurrent._spnnik.getSelectedIndex())+"', '"+mostCurrent._txtnmpengguna.getText()+"', '"+mostCurrent._txtpwd.getText()+"')");
  }else {
  };
-RDebugUtils.currentLine=3801122;
- //BA.debugLineNum = 3801122;BA.debugLine="tampilanAwal";
+RDebugUtils.currentLine=3276834;
+ //BA.debugLineNum = 3276834;BA.debugLine="tampilanAwal";
 _tampilanawal();
-RDebugUtils.currentLine=3801123;
- //BA.debugLineNum = 3801123;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3276835;
+ //BA.debugLineNum = 3276835;BA.debugLine="End Sub";
 return "";
 }
 public static String  _tampilanawal() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "tampilanawal", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "tampilanawal", null));}
-RDebugUtils.currentLine=3866624;
- //BA.debugLineNum = 3866624;BA.debugLine="Sub tampilanAwal";
-RDebugUtils.currentLine=3866625;
- //BA.debugLineNum = 3866625;BA.debugLine="spnnik.SelectedIndex = \"\"";
+RDebugUtils.currentLine=3342336;
+ //BA.debugLineNum = 3342336;BA.debugLine="Sub tampilanAwal";
+RDebugUtils.currentLine=3342337;
+ //BA.debugLineNum = 3342337;BA.debugLine="spnnik.SelectedIndex = \"\"";
 mostCurrent._spnnik.setSelectedIndex((int)(Double.parseDouble("")));
-RDebugUtils.currentLine=3866626;
- //BA.debugLineNum = 3866626;BA.debugLine="txtnmpengguna.Text = \"\"";
+RDebugUtils.currentLine=3342338;
+ //BA.debugLineNum = 3342338;BA.debugLine="txtnmpengguna.Text = \"\"";
 mostCurrent._txtnmpengguna.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3866627;
- //BA.debugLineNum = 3866627;BA.debugLine="txtpwd.Text = \"\"";
+RDebugUtils.currentLine=3342339;
+ //BA.debugLineNum = 3342339;BA.debugLine="txtpwd.Text = \"\"";
 mostCurrent._txtpwd.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3866630;
- //BA.debugLineNum = 3866630;BA.debugLine="showList";
+RDebugUtils.currentLine=3342342;
+ //BA.debugLineNum = 3342342;BA.debugLine="showList";
 _showlist();
-RDebugUtils.currentLine=3866632;
- //BA.debugLineNum = 3866632;BA.debugLine="pnlakun.Visible = True";
+RDebugUtils.currentLine=3342344;
+ //BA.debugLineNum = 3342344;BA.debugLine="pnlakun.Visible = True";
 mostCurrent._pnlakun.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3866633;
- //BA.debugLineNum = 3866633;BA.debugLine="pnladd.Visible = False";
+RDebugUtils.currentLine=3342345;
+ //BA.debugLineNum = 3342345;BA.debugLine="pnladd.Visible = False";
 mostCurrent._pnladd.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=3866634;
- //BA.debugLineNum = 3866634;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3342346;
+ //BA.debugLineNum = 3342346;BA.debugLine="End Sub";
 return "";
 }
 public static String  _filterlist() throws Exception{
@@ -613,57 +616,57 @@ RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "filterlist", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "filterlist", null));}
 int _i = 0;
-RDebugUtils.currentLine=3538944;
- //BA.debugLineNum = 3538944;BA.debugLine="Sub FilterList";
-RDebugUtils.currentLine=3538945;
- //BA.debugLineNum = 3538945;BA.debugLine="ModulKoneksi.koneksi";
+RDebugUtils.currentLine=3014656;
+ //BA.debugLineNum = 3014656;BA.debugLine="Sub FilterList";
+RDebugUtils.currentLine=3014657;
+ //BA.debugLineNum = 3014657;BA.debugLine="ModulKoneksi.koneksi";
 mostCurrent._modulkoneksi._koneksi /*String*/ (mostCurrent.activityBA);
-RDebugUtils.currentLine=3538947;
- //BA.debugLineNum = 3538947;BA.debugLine="lv.Clear";
+RDebugUtils.currentLine=3014659;
+ //BA.debugLineNum = 3014659;BA.debugLine="lv.Clear";
 mostCurrent._lv.Clear();
-RDebugUtils.currentLine=3538948;
- //BA.debugLineNum = 3538948;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
+RDebugUtils.currentLine=3014660;
+ //BA.debugLineNum = 3014660;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
 mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/  = (mysql.mysqlhandler.ResultSetWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new mysql.mysqlhandler.ResultSetWrapper(), (java.sql.ResultSet)(mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Query("SELECT * FROM tb_akunwarga WHERE username LIKE '%"+mostCurrent._search.getText()+"%' ORDER BY id_akun_warga ASC")));
-RDebugUtils.currentLine=3538950;
- //BA.debugLineNum = 3538950;BA.debugLine="For i = 0 To ModulKoneksi.rs.RowCount - 1";
+RDebugUtils.currentLine=3014662;
+ //BA.debugLineNum = 3014662;BA.debugLine="For i = 0 To ModulKoneksi.rs.RowCount - 1";
 {
 final int step4 = 1;
 final int limit4 = (int) (mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .RowCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit4 ;_i = _i + step4 ) {
-RDebugUtils.currentLine=3538951;
- //BA.debugLineNum = 3538951;BA.debugLine="lv.AddSingleLine(ModulKoneksi.rs.GetString2(\"use";
+RDebugUtils.currentLine=3014663;
+ //BA.debugLineNum = 3014663;BA.debugLine="lv.AddSingleLine(ModulKoneksi.rs.GetString2(\"use";
 mostCurrent._lv.AddSingleLine(BA.ObjectToCharSequence(mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .GetString2("username")));
  }
 };
-RDebugUtils.currentLine=3538954;
- //BA.debugLineNum = 3538954;BA.debugLine="ModulKoneksi.mh.Close";
+RDebugUtils.currentLine=3014666;
+ //BA.debugLineNum = 3014666;BA.debugLine="ModulKoneksi.mh.Close";
 mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Close();
-RDebugUtils.currentLine=3538955;
- //BA.debugLineNum = 3538955;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3014667;
+ //BA.debugLineNum = 3014667;BA.debugLine="End Sub";
 return "";
 }
 public static String  _search_enterpressed() throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "search_enterpressed", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "search_enterpressed", null));}
-RDebugUtils.currentLine=3407872;
- //BA.debugLineNum = 3407872;BA.debugLine="Private Sub search_EnterPressed";
-RDebugUtils.currentLine=3407873;
- //BA.debugLineNum = 3407873;BA.debugLine="FilterList";
+RDebugUtils.currentLine=2883584;
+ //BA.debugLineNum = 2883584;BA.debugLine="Private Sub search_EnterPressed";
+RDebugUtils.currentLine=2883585;
+ //BA.debugLineNum = 2883585;BA.debugLine="FilterList";
 _filterlist();
-RDebugUtils.currentLine=3407874;
- //BA.debugLineNum = 3407874;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2883586;
+ //BA.debugLineNum = 2883586;BA.debugLine="End Sub";
 return "";
 }
 public static String  _spnnik_itemclick(int _position,Object _value) throws Exception{
 RDebugUtils.currentModule="akunpenduduk";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "spnnik_itemclick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spnnik_itemclick", new Object[] {_position,_value}));}
-RDebugUtils.currentLine=3997696;
- //BA.debugLineNum = 3997696;BA.debugLine="Private Sub spnnik_ItemClick (Position As Int, Val";
-RDebugUtils.currentLine=3997698;
- //BA.debugLineNum = 3997698;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3473408;
+ //BA.debugLineNum = 3473408;BA.debugLine="Private Sub spnnik_ItemClick (Position As Int, Val";
+RDebugUtils.currentLine=3473410;
+ //BA.debugLineNum = 3473410;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -100,7 +100,7 @@ End Sub
 
 Sub isiSpinner
 	spnnik.Clear
-	spnnik.AddAll(Array As String("Data 1","Data 2","Data 3","Data 4"))
+	ModulKoneksi.rs = ModulKoneksi.mh.Query("SELECT * FROM tb_akunwarga ORDER BY id_akun_warga ASC")
 End Sub
 
 Private Sub btnSave_Click

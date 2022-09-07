@@ -8,7 +8,7 @@ public class actregister_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (actregister) ","actregister",5,actregister.mostCurrent.activityBA,actregister.mostCurrent,17);
+		Debug.PushSubsStack("Activity_Create (actregister) ","actregister",3,actregister.mostCurrent.activityBA,actregister.mostCurrent,17);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.actregister.remoteMe.runUserSub(false, "actregister","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 17;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -28,7 +28,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (actregister) ","actregister",5,actregister.mostCurrent.activityBA,actregister.mostCurrent,27);
+		Debug.PushSubsStack("Activity_Pause (actregister) ","actregister",3,actregister.mostCurrent.activityBA,actregister.mostCurrent,27);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.actregister.remoteMe.runUserSub(false, "actregister","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 27;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -45,7 +45,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (actregister) ","actregister",5,actregister.mostCurrent.activityBA,actregister.mostCurrent,23);
+		Debug.PushSubsStack("Activity_Resume (actregister) ","actregister",3,actregister.mostCurrent.activityBA,actregister.mostCurrent,23);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.actregister.remoteMe.runUserSub(false, "actregister","activity_resume");}
  BA.debugLineNum = 23;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(4194304);
@@ -61,7 +61,7 @@ finally {
 		}}
 public static RemoteObject  _btnlogin_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnLogin_Click (actregister) ","actregister",5,actregister.mostCurrent.activityBA,actregister.mostCurrent,32);
+		Debug.PushSubsStack("btnLogin_Click (actregister) ","actregister",3,actregister.mostCurrent.activityBA,actregister.mostCurrent,32);
 if (RapidSub.canDelegate("btnlogin_click")) { return b4a.example.actregister.remoteMe.runUserSub(false, "actregister","btnlogin_click");}
  BA.debugLineNum = 32;BA.debugLine="Private Sub btnLogin_Click";
 Debug.ShouldStop(-2147483648);

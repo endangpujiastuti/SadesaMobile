@@ -26,34 +26,6 @@ main,signin_click,0,0,39,42
 
 
 
-actopsi,activity_create,1,0,20,23
-,admindesa,,warga
-,admindesa,,warga
-
-actopsi,activity_pause,0,0,29,31
-
-
-
-actopsi,activity_resume,0,0,25,27
-
-
-
-actopsi,admindesa_click,0,0,34,37
-
-
-
-actopsi,globals,0,1,12,18
-
-
-
-actopsi,process_globals,0,1,6,10
-
-
-
-actopsi,warga_click,0,0,39,41
-
-
-
 actlogin,activity_create,1,0,27,30
 ,txtnama,,txtpass
 ,txtnama,,txtpass
@@ -82,6 +54,10 @@ actlogin,btnresetsandi_click,0,0,46,49
 
 
 
+actlogin,checkboxlupasandi_checkedchange,1,0,95,99
+,txtpass
+
+
 actlogin,globals,0,1,12,25
 
 
@@ -90,11 +66,11 @@ actlogin,process_globals,0,1,6,10
 
 
 
-modulkoneksi,koneksi,0,0,12,21
+modulkoneksi,koneksi,0,0,13,20
 ,mh
 
 
-modulkoneksi,process_globals,0,1,3,10
+modulkoneksi,process_globals,0,1,5,11
 
 
 
@@ -199,8 +175,8 @@ akunpenduduk,showlist,0,0,56,68
 modulkoneksi,rs
 modulkoneksi,koneksi
 akunpenduduk,isispinner,0,0,95,98
-,spnnik
-
+,spnnik,modulkoneksi,rs,modulkoneksi,mh
+modulkoneksi,rs
 
 akunpenduduk,activity_pause,0,0,46,48
 
@@ -247,6 +223,126 @@ akunpenduduk,search_enterpressed,0,0,51,53
 modulkoneksi,rs
 ,filterlist,modulkoneksi,koneksi
 akunpenduduk,spnnik_itemclick,0,0,154,156
+
+
+
+datapenduduk,activity_create,1,0,21,28
+,btntambah,,label1,,lv,modulkoneksi,rs,modulkoneksi,mh
+,btntambah,,label1,,lv,modulkoneksi,rs
+,showlist,modulkoneksi,koneksi
+datapenduduk,showlist,0,0,45,57
+,lv,modulkoneksi,rs,modulkoneksi,mh
+modulkoneksi,rs
+modulkoneksi,koneksi
+datapenduduk,activity_pause,0,0,34,37
+
+
+
+datapenduduk,activity_resume,0,0,30,32
+
+
+
+datapenduduk,btntambah_click,0,0,40,43
+
+
+
+datapenduduk,globals,0,1,12,19
+
+
+
+datapenduduk,process_globals,0,1,6,10
+
+
+
+tambahdatajenisdokumen,activity_create,1,0,18,24
+
+
+
+tambahdatajenisdokumen,activity_pause,0,0,30,32
+
+
+
+tambahdatajenisdokumen,activity_resume,0,0,26,28
+
+
+
+tambahdatajenisdokumen,globals,0,1,12,16
+
+
+
+tambahdatajenisdokumen,process_globals,0,1,6,10
+
+
+
+pengajuan,activity_create,1,0,19,28
+,lv,modulkoneksi,rs,modulkoneksi,mh
+,lv,modulkoneksi,rs
+,showlist,modulkoneksi,koneksi
+pengajuan,showlist,0,0,38,50
+,lv,modulkoneksi,rs,modulkoneksi,mh
+modulkoneksi,rs
+modulkoneksi,koneksi
+pengajuan,activity_pause,0,0,34,36
+
+
+
+pengajuan,activity_resume,0,0,30,32
+
+
+
+pengajuan,globals,0,1,12,17
+
+
+
+pengajuan,process_globals,0,1,6,10
+
+
+
+opsilainya,activity_create,1,1,23,27
+
+
+
+opsilainya,activity_pause,0,0,33,35
+
+
+
+opsilainya,activity_resume,0,0,29,31
+
+
+
+opsilainya,akunwarga_click,0,0,66,69
+
+
+
+opsilainya,arsipdokumen_click,0,0,62,64
+
+
+
+opsilainya,beranda_click,0,0,57,60
+
+
+
+opsilainya,datapenduduk_click,0,0,52,55
+
+
+
+opsilainya,globals,0,1,12,21
+
+
+
+opsilainya,jenisdokumen_click,0,0,47,50
+
+
+
+opsilainya,keluar_click,0,0,42,45
+
+
+
+opsilainya,pengajuan_click,0,0,37,40
+
+
+
+opsilainya,process_globals,0,1,6,10
 
 
 

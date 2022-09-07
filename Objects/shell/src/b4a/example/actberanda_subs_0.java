@@ -8,7 +8,7 @@ public class actberanda_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (actberanda) ","actberanda",4,actberanda.mostCurrent.activityBA,actberanda.mostCurrent,21);
+		Debug.PushSubsStack("Activity_Create (actberanda) ","actberanda",2,actberanda.mostCurrent.activityBA,actberanda.mostCurrent,21);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.actberanda.remoteMe.runUserSub(false, "actberanda","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 21;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -28,7 +28,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (actberanda) ","actberanda",4,actberanda.mostCurrent.activityBA,actberanda.mostCurrent,31);
+		Debug.PushSubsStack("Activity_Pause (actberanda) ","actberanda",2,actberanda.mostCurrent.activityBA,actberanda.mostCurrent,31);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.actberanda.remoteMe.runUserSub(false, "actberanda","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 31;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -45,7 +45,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (actberanda) ","actberanda",4,actberanda.mostCurrent.activityBA,actberanda.mostCurrent,27);
+		Debug.PushSubsStack("Activity_Resume (actberanda) ","actberanda",2,actberanda.mostCurrent.activityBA,actberanda.mostCurrent,27);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.actberanda.remoteMe.runUserSub(false, "actberanda","activity_resume");}
  BA.debugLineNum = 27;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(67108864);

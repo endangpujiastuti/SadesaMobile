@@ -351,12 +351,15 @@ public static void initializeProcessGlobals() {
 public static boolean isAnyActivityVisible() {
     boolean vis = false;
 vis = vis | (main.mostCurrent != null);
-vis = vis | (actopsi.mostCurrent != null);
 vis = vis | (actlogin.mostCurrent != null);
 vis = vis | (actberanda.mostCurrent != null);
 vis = vis | (actregister.mostCurrent != null);
 vis = vis | (actlupakatasandi.mostCurrent != null);
 vis = vis | (akunpenduduk.mostCurrent != null);
+vis = vis | (datapenduduk.mostCurrent != null);
+vis = vis | (tambahdatajenisdokumen.mostCurrent != null);
+vis = vis | (pengajuan.mostCurrent != null);
+vis = vis | (opsilainya.mostCurrent != null);
 return vis;}
 
 private static BA killProgramHelper(BA ba) {
@@ -375,18 +378,6 @@ public static void killProgram() {
 			}
             else {
                 BA ba = killProgramHelper(main.mostCurrent == null ? null : main.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
-            if (actopsi.previousOne != null) {
-				__a = actopsi.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(actopsi.mostCurrent == null ? null : actopsi.mostCurrent.processBA);
                 if (ba != null) __a = ba.activity;
             }
             if (__a != null)
@@ -453,17 +444,68 @@ BA.applicationContext.stopService(new android.content.Intent(BA.applicationConte
             if (__a != null)
 				__a.finish();}
 
+ {
+            Activity __a = null;
+            if (datapenduduk.previousOne != null) {
+				__a = datapenduduk.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(datapenduduk.mostCurrent == null ? null : datapenduduk.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (tambahdatajenisdokumen.previousOne != null) {
+				__a = tambahdatajenisdokumen.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(tambahdatajenisdokumen.mostCurrent == null ? null : tambahdatajenisdokumen.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (pengajuan.previousOne != null) {
+				__a = pengajuan.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(pengajuan.mostCurrent == null ? null : pengajuan.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (opsilainya.previousOne != null) {
+				__a = opsilainya.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(opsilainya.mostCurrent == null ? null : opsilainya.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
 }
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
-public b4a.example.actopsi _actopsi = null;
 public b4a.example.actlogin _actlogin = null;
-public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
 public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
+public b4a.example.modulkoneksi _modulkoneksi = null;
+public b4a.example.datapenduduk _datapenduduk = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.pengajuan _pengajuan = null;
+public b4a.example.opsilainya _opsilainya = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
@@ -502,8 +544,8 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "signin_click", false))
 RDebugUtils.currentLine=327680;
  //BA.debugLineNum = 327680;BA.debugLine="Private Sub SignIn_Click";
 RDebugUtils.currentLine=327682;
- //BA.debugLineNum = 327682;BA.debugLine="StartActivity(actOpsi)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actopsi.getObject()));
+ //BA.debugLineNum = 327682;BA.debugLine="StartActivity(actLogin)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actlogin.getObject()));
 RDebugUtils.currentLine=327683;
  //BA.debugLineNum = 327683;BA.debugLine="End Sub";
 return "";

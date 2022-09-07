@@ -70,7 +70,7 @@ Private Sub BtnLogin_Click
 	
 	enkripsi
 	
-	'cek usename
+	'cek username
 	ModulKoneksi.rs = ModulKoneksi.mh.Query("SELECT * FROM tb_admindesa WHERE username='" & txtnama.Text & "'")
 	If ModulKoneksi.rs.RowCount > 0 Then
 		'cek password
@@ -80,7 +80,7 @@ Private Sub BtnLogin_Click
 			ModulKoneksi.mh.Close
 			
 			Activity.Finish
-			StartActivity(AkunPenduduk)
+			StartActivity(OpsiLainya)
 		Else
 			MsgboxAsync("Password tidak ditemukan","Info")
 			txtpass.Text = ""
@@ -96,4 +96,10 @@ End Sub
 Sub enkripsi
 	passwordhash = md.GetMessageDigest(p.GetBytes("UTF8"),"MD5")
 	epass = ByteCon.HexFromBytes(passwordhash)
+End Sub
+
+Private Sub CheckBoxLupaSandi_CheckedChange (Checked As Boolean)
+	If Checked = True Then
+		txtpass.Text = " CheckBoxLupaSandi qualified "
+	End If
 End Sub

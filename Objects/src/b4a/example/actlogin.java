@@ -353,166 +353,186 @@ public static byte[] _passwordhash = null;
 public static String _epass = "";
 public static String _p = "";
 public b4a.example.main _main = null;
-public b4a.example.actopsi _actopsi = null;
-public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
 public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
+public b4a.example.modulkoneksi _modulkoneksi = null;
+public b4a.example.datapenduduk _datapenduduk = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.pengajuan _pengajuan = null;
+public b4a.example.opsilainya _opsilainya = null;
 public static String  _activity_create(boolean _firesultsttime) throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firesultsttime}));}
-RDebugUtils.currentLine=983040;
- //BA.debugLineNum = 983040;BA.debugLine="Sub Activity_Create(FiResultStTime As Boolean)";
-RDebugUtils.currentLine=983042;
- //BA.debugLineNum = 983042;BA.debugLine="Activity.LoadLayout(\"Login\")";
+RDebugUtils.currentLine=524288;
+ //BA.debugLineNum = 524288;BA.debugLine="Sub Activity_Create(FiResultStTime As Boolean)";
+RDebugUtils.currentLine=524290;
+ //BA.debugLineNum = 524290;BA.debugLine="Activity.LoadLayout(\"Login\")";
 mostCurrent._activity.LoadLayout("Login",mostCurrent.activityBA);
-RDebugUtils.currentLine=983043;
- //BA.debugLineNum = 983043;BA.debugLine="End Sub";
+RDebugUtils.currentLine=524291;
+ //BA.debugLineNum = 524291;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="actlogin";
-RDebugUtils.currentLine=1114112;
- //BA.debugLineNum = 1114112;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=1114114;
- //BA.debugLineNum = 1114114;BA.debugLine="End Sub";
+RDebugUtils.currentLine=655360;
+ //BA.debugLineNum = 655360;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=655362;
+ //BA.debugLineNum = 655362;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=1048576;
- //BA.debugLineNum = 1048576;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=1048578;
- //BA.debugLineNum = 1048578;BA.debugLine="End Sub";
+RDebugUtils.currentLine=589824;
+ //BA.debugLineNum = 589824;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=589826;
+ //BA.debugLineNum = 589826;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnlogin_click() throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnlogin_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnlogin_click", null));}
-RDebugUtils.currentLine=1310720;
- //BA.debugLineNum = 1310720;BA.debugLine="Private Sub BtnLogin_Click";
-RDebugUtils.currentLine=1310722;
- //BA.debugLineNum = 1310722;BA.debugLine="If txtnama.Text = \"\" Then";
+RDebugUtils.currentLine=851968;
+ //BA.debugLineNum = 851968;BA.debugLine="Private Sub BtnLogin_Click";
+RDebugUtils.currentLine=851970;
+ //BA.debugLineNum = 851970;BA.debugLine="If txtnama.Text = \"\" Then";
 if ((mostCurrent._txtnama.getText()).equals("")) { 
-RDebugUtils.currentLine=1310723;
- //BA.debugLineNum = 1310723;BA.debugLine="MsgboxAsync(\"Masukkan Username\",\"Info\")";
+RDebugUtils.currentLine=851971;
+ //BA.debugLineNum = 851971;BA.debugLine="MsgboxAsync(\"Masukkan Username\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Masukkan Username"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=1310724;
- //BA.debugLineNum = 1310724;BA.debugLine="Return";
+RDebugUtils.currentLine=851972;
+ //BA.debugLineNum = 851972;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=1310726;
- //BA.debugLineNum = 1310726;BA.debugLine="If txtpass.Text = \"\" Then";
+RDebugUtils.currentLine=851974;
+ //BA.debugLineNum = 851974;BA.debugLine="If txtpass.Text = \"\" Then";
 if ((mostCurrent._txtpass.getText()).equals("")) { 
-RDebugUtils.currentLine=1310727;
- //BA.debugLineNum = 1310727;BA.debugLine="MsgboxAsync(\"Masukkan Password\",\"Info\")";
+RDebugUtils.currentLine=851975;
+ //BA.debugLineNum = 851975;BA.debugLine="MsgboxAsync(\"Masukkan Password\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Masukkan Password"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=1310728;
- //BA.debugLineNum = 1310728;BA.debugLine="Return";
+RDebugUtils.currentLine=851976;
+ //BA.debugLineNum = 851976;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=1310731;
- //BA.debugLineNum = 1310731;BA.debugLine="ModulKoneksi.koneksi";
+RDebugUtils.currentLine=851979;
+ //BA.debugLineNum = 851979;BA.debugLine="ModulKoneksi.koneksi";
 mostCurrent._modulkoneksi._koneksi /*String*/ (mostCurrent.activityBA);
-RDebugUtils.currentLine=1310733;
- //BA.debugLineNum = 1310733;BA.debugLine="p = txtpass.Text";
+RDebugUtils.currentLine=851981;
+ //BA.debugLineNum = 851981;BA.debugLine="p = txtpass.Text";
 mostCurrent._p = mostCurrent._txtpass.getText();
-RDebugUtils.currentLine=1310735;
- //BA.debugLineNum = 1310735;BA.debugLine="enkripsi";
+RDebugUtils.currentLine=851983;
+ //BA.debugLineNum = 851983;BA.debugLine="enkripsi";
 _enkripsi();
-RDebugUtils.currentLine=1310738;
- //BA.debugLineNum = 1310738;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
+RDebugUtils.currentLine=851986;
+ //BA.debugLineNum = 851986;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT *";
 mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/  = (mysql.mysqlhandler.ResultSetWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new mysql.mysqlhandler.ResultSetWrapper(), (java.sql.ResultSet)(mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Query("SELECT * FROM tb_admindesa WHERE username='"+mostCurrent._txtnama.getText()+"'")));
-RDebugUtils.currentLine=1310739;
- //BA.debugLineNum = 1310739;BA.debugLine="If ModulKoneksi.rs.RowCount > 0 Then";
+RDebugUtils.currentLine=851987;
+ //BA.debugLineNum = 851987;BA.debugLine="If ModulKoneksi.rs.RowCount > 0 Then";
 if (mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .RowCount()>0) { 
-RDebugUtils.currentLine=1310741;
- //BA.debugLineNum = 1310741;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT";
+RDebugUtils.currentLine=851989;
+ //BA.debugLineNum = 851989;BA.debugLine="ModulKoneksi.rs = ModulKoneksi.mh.Query(\"SELECT";
 mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/  = (mysql.mysqlhandler.ResultSetWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new mysql.mysqlhandler.ResultSetWrapper(), (java.sql.ResultSet)(mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Query("SELECT * FROM tb_admindesa WHERE username='"+mostCurrent._txtnama.getText()+"' and password='"+mostCurrent._epass+"'")));
-RDebugUtils.currentLine=1310742;
- //BA.debugLineNum = 1310742;BA.debugLine="If ModulKoneksi.rs.RowCount > 0 Then";
+RDebugUtils.currentLine=851990;
+ //BA.debugLineNum = 851990;BA.debugLine="If ModulKoneksi.rs.RowCount > 0 Then";
 if (mostCurrent._modulkoneksi._rs /*mysql.mysqlhandler.ResultSetWrapper*/ .RowCount()>0) { 
-RDebugUtils.currentLine=1310744;
- //BA.debugLineNum = 1310744;BA.debugLine="ModulKoneksi.mh.Close";
+RDebugUtils.currentLine=851992;
+ //BA.debugLineNum = 851992;BA.debugLine="ModulKoneksi.mh.Close";
 mostCurrent._modulkoneksi._mh /*mysql.mysqlhandler*/ .Close();
-RDebugUtils.currentLine=1310746;
- //BA.debugLineNum = 1310746;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=851994;
+ //BA.debugLineNum = 851994;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=1310747;
- //BA.debugLineNum = 1310747;BA.debugLine="StartActivity(AkunPenduduk)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._akunpenduduk.getObject()));
+RDebugUtils.currentLine=851995;
+ //BA.debugLineNum = 851995;BA.debugLine="StartActivity(OpsiLainya)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._opsilainya.getObject()));
  }else {
-RDebugUtils.currentLine=1310749;
- //BA.debugLineNum = 1310749;BA.debugLine="MsgboxAsync(\"Password tidak ditemukan\",\"Info\")";
+RDebugUtils.currentLine=851997;
+ //BA.debugLineNum = 851997;BA.debugLine="MsgboxAsync(\"Password tidak ditemukan\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Password tidak ditemukan"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=1310750;
- //BA.debugLineNum = 1310750;BA.debugLine="txtpass.Text = \"\"";
+RDebugUtils.currentLine=851998;
+ //BA.debugLineNum = 851998;BA.debugLine="txtpass.Text = \"\"";
 mostCurrent._txtpass.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=1310751;
- //BA.debugLineNum = 1310751;BA.debugLine="Return";
+RDebugUtils.currentLine=851999;
+ //BA.debugLineNum = 851999;BA.debugLine="Return";
 if (true) return "";
  };
  }else {
-RDebugUtils.currentLine=1310754;
- //BA.debugLineNum = 1310754;BA.debugLine="MsgboxAsync(\"Username tidak ditemukan\",\"Info\")";
+RDebugUtils.currentLine=852002;
+ //BA.debugLineNum = 852002;BA.debugLine="MsgboxAsync(\"Username tidak ditemukan\",\"Info\")";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Username tidak ditemukan"),BA.ObjectToCharSequence("Info"),processBA);
-RDebugUtils.currentLine=1310755;
- //BA.debugLineNum = 1310755;BA.debugLine="txtnama.Text = \"\"";
+RDebugUtils.currentLine=852003;
+ //BA.debugLineNum = 852003;BA.debugLine="txtnama.Text = \"\"";
 mostCurrent._txtnama.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=1310756;
- //BA.debugLineNum = 1310756;BA.debugLine="Return";
+RDebugUtils.currentLine=852004;
+ //BA.debugLineNum = 852004;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=1310758;
- //BA.debugLineNum = 1310758;BA.debugLine="End Sub";
+RDebugUtils.currentLine=852006;
+ //BA.debugLineNum = 852006;BA.debugLine="End Sub";
 return "";
 }
 public static String  _enkripsi() throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "enkripsi", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "enkripsi", null));}
-RDebugUtils.currentLine=1376256;
- //BA.debugLineNum = 1376256;BA.debugLine="Sub enkripsi";
-RDebugUtils.currentLine=1376257;
- //BA.debugLineNum = 1376257;BA.debugLine="passwordhash = md.GetMessageDigest(p.GetBytes(\"UT";
+RDebugUtils.currentLine=917504;
+ //BA.debugLineNum = 917504;BA.debugLine="Sub enkripsi";
+RDebugUtils.currentLine=917505;
+ //BA.debugLineNum = 917505;BA.debugLine="passwordhash = md.GetMessageDigest(p.GetBytes(\"UT";
 _passwordhash = mostCurrent._md.GetMessageDigest(mostCurrent._p.getBytes("UTF8"),"MD5");
-RDebugUtils.currentLine=1376258;
- //BA.debugLineNum = 1376258;BA.debugLine="epass = ByteCon.HexFromBytes(passwordhash)";
+RDebugUtils.currentLine=917506;
+ //BA.debugLineNum = 917506;BA.debugLine="epass = ByteCon.HexFromBytes(passwordhash)";
 mostCurrent._epass = mostCurrent._bytecon.HexFromBytes(_passwordhash);
-RDebugUtils.currentLine=1376259;
- //BA.debugLineNum = 1376259;BA.debugLine="End Sub";
+RDebugUtils.currentLine=917507;
+ //BA.debugLineNum = 917507;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnregis_click() throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnregis_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnregis_click", null));}
-RDebugUtils.currentLine=1179648;
- //BA.debugLineNum = 1179648;BA.debugLine="Sub btnRegis_Click";
-RDebugUtils.currentLine=1179650;
- //BA.debugLineNum = 1179650;BA.debugLine="StartActivity(actRegister)";
+RDebugUtils.currentLine=720896;
+ //BA.debugLineNum = 720896;BA.debugLine="Sub btnRegis_Click";
+RDebugUtils.currentLine=720898;
+ //BA.debugLineNum = 720898;BA.debugLine="StartActivity(actRegister)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actregister.getObject()));
-RDebugUtils.currentLine=1179651;
- //BA.debugLineNum = 1179651;BA.debugLine="End Sub";
+RDebugUtils.currentLine=720899;
+ //BA.debugLineNum = 720899;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnresetsandi_click() throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnresetsandi_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnresetsandi_click", null));}
-RDebugUtils.currentLine=1245184;
- //BA.debugLineNum = 1245184;BA.debugLine="Sub BtnResetSandi_Click";
-RDebugUtils.currentLine=1245186;
- //BA.debugLineNum = 1245186;BA.debugLine="StartActivity(actLupaKataSandi)";
+RDebugUtils.currentLine=786432;
+ //BA.debugLineNum = 786432;BA.debugLine="Sub BtnResetSandi_Click";
+RDebugUtils.currentLine=786434;
+ //BA.debugLineNum = 786434;BA.debugLine="StartActivity(actLupaKataSandi)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actlupakatasandi.getObject()));
-RDebugUtils.currentLine=1245187;
- //BA.debugLineNum = 1245187;BA.debugLine="End Sub";
+RDebugUtils.currentLine=786435;
+ //BA.debugLineNum = 786435;BA.debugLine="End Sub";
+return "";
+}
+public static String  _checkboxlupasandi_checkedchange(boolean _checked) throws Exception{
+RDebugUtils.currentModule="actlogin";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "checkboxlupasandi_checkedchange", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "checkboxlupasandi_checkedchange", new Object[] {_checked}));}
+RDebugUtils.currentLine=983040;
+ //BA.debugLineNum = 983040;BA.debugLine="Private Sub CheckBoxLupaSandi_CheckedChange (Check";
+RDebugUtils.currentLine=983041;
+ //BA.debugLineNum = 983041;BA.debugLine="If Checked = True Then";
+if (_checked==anywheresoftware.b4a.keywords.Common.True) { 
+RDebugUtils.currentLine=983042;
+ //BA.debugLineNum = 983042;BA.debugLine="txtpass.Text = \" CheckBoxLupaSandi qualified \"";
+mostCurrent._txtpass.setText(BA.ObjectToCharSequence(" CheckBoxLupaSandi qualified "));
+ };
+RDebugUtils.currentLine=983044;
+ //BA.debugLineNum = 983044;BA.debugLine="End Sub";
 return "";
 }
 }
