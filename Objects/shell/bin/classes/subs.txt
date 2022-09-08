@@ -118,30 +118,6 @@ actregister,process_globals,0,1,6,10
 
 
 
-actlupakatasandi,activity_create,1,0,19,22
-,btnhubadmin
-,btnhubadmin
-
-actlupakatasandi,activity_pause,0,0,28,30
-
-
-
-actlupakatasandi,activity_resume,0,0,24,26
-
-
-
-actlupakatasandi,btnhubadmin_click,0,0,32,34
-
-
-
-actlupakatasandi,globals,0,1,12,17
-
-
-
-actlupakatasandi,process_globals,0,1,6,10
-
-
-
 starter,application_error,0,0,27,29
 
 
@@ -230,7 +206,7 @@ datapenduduk,activity_create,1,0,21,28
 ,btntambah,,label1,,lv,modulkoneksi,rs,modulkoneksi,mh
 ,btntambah,,label1,,lv,modulkoneksi,rs
 ,showlist,modulkoneksi,koneksi
-datapenduduk,showlist,0,0,45,57
+datapenduduk,showlist,0,0,44,56
 ,lv,modulkoneksi,rs,modulkoneksi,mh
 modulkoneksi,rs
 modulkoneksi,koneksi
@@ -242,7 +218,7 @@ datapenduduk,activity_resume,0,0,30,32
 
 
 
-datapenduduk,btntambah_click,0,0,40,43
+datapenduduk,btntambah_click,0,0,40,42
 
 
 
@@ -251,26 +227,6 @@ datapenduduk,globals,0,1,12,19
 
 
 datapenduduk,process_globals,0,1,6,10
-
-
-
-tambahdatajenisdokumen,activity_create,1,0,18,24
-
-
-
-tambahdatajenisdokumen,activity_pause,0,0,30,32
-
-
-
-tambahdatajenisdokumen,activity_resume,0,0,26,28
-
-
-
-tambahdatajenisdokumen,globals,0,1,12,16
-
-
-
-tambahdatajenisdokumen,process_globals,0,1,6,10
 
 
 
@@ -298,51 +254,95 @@ pengajuan,process_globals,0,1,6,10
 
 
 
-opsilainya,activity_create,1,1,23,27
+actlupakatasandi,activity_create,1,0,19,22
+,btnhubadmin
+,btnhubadmin
+
+actlupakatasandi,activity_pause,0,0,28,30
 
 
 
-opsilainya,activity_pause,0,0,33,35
+actlupakatasandi,activity_resume,0,0,24,26
 
 
 
-opsilainya,activity_resume,0,0,29,31
+actlupakatasandi,btnhubadmin_click,0,0,32,34
 
 
 
-opsilainya,akunwarga_click,0,0,66,69
+actlupakatasandi,globals,0,1,12,17
 
 
 
-opsilainya,arsipdokumen_click,0,0,62,64
+actlupakatasandi,process_globals,0,1,6,10
 
 
 
-opsilainya,beranda_click,0,0,57,60
+tambahdatajenisdokumen,activity_create,1,0,18,24
 
 
 
-opsilainya,datapenduduk_click,0,0,52,55
+tambahdatajenisdokumen,activity_pause,0,0,30,32
 
 
 
-opsilainya,globals,0,1,12,21
+tambahdatajenisdokumen,activity_resume,0,0,26,28
 
 
 
-opsilainya,jenisdokumen_click,0,0,47,50
+tambahdatajenisdokumen,globals,0,1,12,16
 
 
 
-opsilainya,keluar_click,0,0,42,45
+tambahdatajenisdokumen,process_globals,0,1,6,10
 
 
 
-opsilainya,pengajuan_click,0,0,37,40
+opsilainyaa,activity_create,1,0,25,29
+,btnakunwarga,,btnarsipdokumen,,btnberanda,,btndatapenduduk,,btnjenisdokumen,,btnkeluar,,btnpengajuan
+,btnakunwarga,,btnarsipdokumen,,btnberanda,,btndatapenduduk,,btnjenisdokumen,,btnkeluar,,btnpengajuan
+
+opsilainyaa,activity_pause,0,0,35,37
 
 
 
-opsilainya,process_globals,0,1,6,10
+opsilainyaa,activity_resume,0,0,31,33
+
+
+
+opsilainyaa,btnakunwarga_click,0,0,64,66
+
+
+
+opsilainyaa,btnarsipdokumen_click,0,0,60,62
+
+
+
+opsilainyaa,btnberanda_click,0,0,56,58
+
+
+
+opsilainyaa,btndatapenduduk_click,0,0,52,54
+
+
+
+opsilainyaa,btnjenisdokumen_click,0,0,48,50
+
+
+
+opsilainyaa,btnkeluar_click,0,0,44,46
+
+
+
+opsilainyaa,btnpengajuan_click,0,0,40,42
+
+
+
+opsilainyaa,globals,0,1,12,23
+
+
+
+opsilainyaa,process_globals,0,1,6,10
 
 
 

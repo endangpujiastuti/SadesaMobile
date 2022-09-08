@@ -354,12 +354,12 @@ vis = vis | (main.mostCurrent != null);
 vis = vis | (actlogin.mostCurrent != null);
 vis = vis | (actberanda.mostCurrent != null);
 vis = vis | (actregister.mostCurrent != null);
-vis = vis | (actlupakatasandi.mostCurrent != null);
 vis = vis | (akunpenduduk.mostCurrent != null);
 vis = vis | (datapenduduk.mostCurrent != null);
-vis = vis | (tambahdatajenisdokumen.mostCurrent != null);
 vis = vis | (pengajuan.mostCurrent != null);
-vis = vis | (opsilainya.mostCurrent != null);
+vis = vis | (actlupakatasandi.mostCurrent != null);
+vis = vis | (tambahdatajenisdokumen.mostCurrent != null);
+vis = vis | (opsilainyaa.mostCurrent != null);
 return vis;}
 
 private static BA killProgramHelper(BA ba) {
@@ -419,18 +419,6 @@ public static void killProgram() {
             if (__a != null)
 				__a.finish();}
 
- {
-            Activity __a = null;
-            if (actlupakatasandi.previousOne != null) {
-				__a = actlupakatasandi.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(actlupakatasandi.mostCurrent == null ? null : actlupakatasandi.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
 BA.applicationContext.stopService(new android.content.Intent(BA.applicationContext, starter.class));
  {
             Activity __a = null;
@@ -458,18 +446,6 @@ BA.applicationContext.stopService(new android.content.Intent(BA.applicationConte
 
  {
             Activity __a = null;
-            if (tambahdatajenisdokumen.previousOne != null) {
-				__a = tambahdatajenisdokumen.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(tambahdatajenisdokumen.mostCurrent == null ? null : tambahdatajenisdokumen.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
             if (pengajuan.previousOne != null) {
 				__a = pengajuan.previousOne.get();
 			}
@@ -482,11 +458,35 @@ BA.applicationContext.stopService(new android.content.Intent(BA.applicationConte
 
  {
             Activity __a = null;
-            if (opsilainya.previousOne != null) {
-				__a = opsilainya.previousOne.get();
+            if (actlupakatasandi.previousOne != null) {
+				__a = actlupakatasandi.previousOne.get();
 			}
             else {
-                BA ba = killProgramHelper(opsilainya.mostCurrent == null ? null : opsilainya.mostCurrent.processBA);
+                BA ba = killProgramHelper(actlupakatasandi.mostCurrent == null ? null : actlupakatasandi.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (tambahdatajenisdokumen.previousOne != null) {
+				__a = tambahdatajenisdokumen.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(tambahdatajenisdokumen.mostCurrent == null ? null : tambahdatajenisdokumen.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
+            if (opsilainyaa.previousOne != null) {
+				__a = opsilainyaa.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(opsilainyaa.mostCurrent == null ? null : opsilainyaa.mostCurrent.processBA);
                 if (ba != null) __a = ba.activity;
             }
             if (__a != null)
@@ -498,14 +498,14 @@ public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
 public b4a.example.actlogin _actlogin = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
-public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
 public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.datapenduduk _datapenduduk = null;
-public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
 public b4a.example.pengajuan _pengajuan = null;
-public b4a.example.opsilainya _opsilainya = null;
+public b4a.example.actlupakatasandi _actlupakatasandi = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.opsilainyaa _opsilainyaa = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))

@@ -74,26 +74,26 @@ public static void initializeProcessGlobals() {
 actlogin_subs_0._process_globals();
 actberanda_subs_0._process_globals();
 actregister_subs_0._process_globals();
-actlupakatasandi_subs_0._process_globals();
 starter_subs_0._process_globals();
 akunpenduduk_subs_0._process_globals();
 modulkoneksi_subs_0._process_globals();
 datapenduduk_subs_0._process_globals();
-tambahdatajenisdokumen_subs_0._process_globals();
 pengajuan_subs_0._process_globals();
-opsilainya_subs_0._process_globals();
+actlupakatasandi_subs_0._process_globals();
+tambahdatajenisdokumen_subs_0._process_globals();
+opsilainyaa_subs_0._process_globals();
 main.myClass = BA.getDeviceClass ("b4a.example.main");
 actlogin.myClass = BA.getDeviceClass ("b4a.example.actlogin");
 actberanda.myClass = BA.getDeviceClass ("b4a.example.actberanda");
 actregister.myClass = BA.getDeviceClass ("b4a.example.actregister");
-actlupakatasandi.myClass = BA.getDeviceClass ("b4a.example.actlupakatasandi");
 starter.myClass = BA.getDeviceClass ("b4a.example.starter");
 akunpenduduk.myClass = BA.getDeviceClass ("b4a.example.akunpenduduk");
 modulkoneksi.myClass = BA.getDeviceClass ("b4a.example.modulkoneksi");
 datapenduduk.myClass = BA.getDeviceClass ("b4a.example.datapenduduk");
-tambahdatajenisdokumen.myClass = BA.getDeviceClass ("b4a.example.tambahdatajenisdokumen");
 pengajuan.myClass = BA.getDeviceClass ("b4a.example.pengajuan");
-opsilainya.myClass = BA.getDeviceClass ("b4a.example.opsilainya");
+actlupakatasandi.myClass = BA.getDeviceClass ("b4a.example.actlupakatasandi");
+tambahdatajenisdokumen.myClass = BA.getDeviceClass ("b4a.example.tambahdatajenisdokumen");
+opsilainyaa.myClass = BA.getDeviceClass ("b4a.example.opsilainyaa");
 		
         } catch (Exception e) {
 			throw new RuntimeException(e);

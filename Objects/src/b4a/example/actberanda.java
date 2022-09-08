@@ -348,14 +348,14 @@ public anywheresoftware.b4a.keywords.Common __c = null;
 public b4a.example.main _main = null;
 public b4a.example.actlogin _actlogin = null;
 public b4a.example.actregister _actregister = null;
-public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
 public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.datapenduduk _datapenduduk = null;
-public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
 public b4a.example.pengajuan _pengajuan = null;
-public b4a.example.opsilainya _opsilainya = null;
+public b4a.example.actlupakatasandi _actlupakatasandi = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.opsilainyaa _opsilainyaa = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="actberanda";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))

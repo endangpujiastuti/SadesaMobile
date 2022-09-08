@@ -8,7 +8,7 @@ public class pengajuan_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (pengajuan) ","pengajuan",10,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,19);
+		Debug.PushSubsStack("Activity_Create (pengajuan) ","pengajuan",8,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,19);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.pengajuan.remoteMe.runUserSub(false, "pengajuan","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 19;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -37,7 +37,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (pengajuan) ","pengajuan",10,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,34);
+		Debug.PushSubsStack("Activity_Pause (pengajuan) ","pengajuan",8,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,34);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.pengajuan.remoteMe.runUserSub(false, "pengajuan","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 34;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -54,7 +54,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (pengajuan) ","pengajuan",10,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,30);
+		Debug.PushSubsStack("Activity_Resume (pengajuan) ","pengajuan",8,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,30);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.pengajuan.remoteMe.runUserSub(false, "pengajuan","activity_resume");}
  BA.debugLineNum = 30;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(536870912);
@@ -82,7 +82,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _showlist() throws Exception{
 try {
-		Debug.PushSubsStack("showList (pengajuan) ","pengajuan",10,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,38);
+		Debug.PushSubsStack("showList (pengajuan) ","pengajuan",8,pengajuan.mostCurrent.activityBA,pengajuan.mostCurrent,38);
 if (RapidSub.canDelegate("showlist")) { return b4a.example.pengajuan.remoteMe.runUserSub(false, "pengajuan","showlist");}
 int _i = 0;
  BA.debugLineNum = 38;BA.debugLine="Sub showList";

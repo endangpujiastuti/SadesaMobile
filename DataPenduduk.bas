@@ -44,7 +44,6 @@ End Sub
 
 
 Private Sub btnTambah_Click
-	Activity.Finish
 	StartActivity(Pengajuan)
 End Sub
 

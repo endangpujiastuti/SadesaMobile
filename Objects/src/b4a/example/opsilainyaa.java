@@ -14,8 +14,8 @@ import anywheresoftware.b4a.B4AUncaughtException;
 import anywheresoftware.b4a.debug.*;
 import java.lang.ref.WeakReference;
 
-public class opsilainya extends Activity implements B4AActivity{
-	public static opsilainya mostCurrent;
+public class opsilainyaa extends Activity implements B4AActivity{
+	public static opsilainyaa mostCurrent;
 	static boolean afterFirstLayout;
 	static boolean isFirst = true;
     private static boolean processGlobalsRun = false;
@@ -24,8 +24,8 @@ public class opsilainya extends Activity implements B4AActivity{
 	BA activityBA;
     ActivityWrapper _activity;
     java.util.ArrayList<B4AMenuItem> menuItems;
-	public static final boolean fullScreen = true;
-	public static final boolean includeTitle = false;
+	public static final boolean fullScreen = false;
+	public static final boolean includeTitle = true;
     public static WeakReference<Activity> previousOne;
     public static boolean dontPause;
 
@@ -34,7 +34,7 @@ public class opsilainya extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.opsilainya");
+			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.opsilainyaa");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -43,7 +43,7 @@ public class opsilainya extends Activity implements B4AActivity{
 		else if (previousOne != null) {
 			Activity p = previousOne.get();
 			if (p != null && p != this) {
-                BA.LogInfo("Killing previous instance (opsilainya).");
+                BA.LogInfo("Killing previous instance (opsilainyaa).");
 				p.finish();
 			}
 		}
@@ -86,7 +86,7 @@ public class opsilainya extends Activity implements B4AActivity{
 	private void afterFirstLayout() {
         if (this != mostCurrent)
 			return;
-		activityBA = new BA(this, layout, processBA, "b4a.example", "b4a.example.opsilainya");
+		activityBA = new BA(this, layout, processBA, "b4a.example", "b4a.example.opsilainyaa");
         
         processBA.sharedProcessBA.activityBA = new java.lang.ref.WeakReference<BA>(activityBA);
         anywheresoftware.b4a.objects.ViewWrapper.lastId = 0;
@@ -95,19 +95,19 @@ public class opsilainya extends Activity implements B4AActivity{
         if (BA.isShellModeRuntimeCheck(processBA)) {
 			if (isFirst)
 				processBA.raiseEvent2(null, true, "SHELL", false);
-			processBA.raiseEvent2(null, true, "CREATE", true, "b4a.example.opsilainya", processBA, activityBA, _activity, anywheresoftware.b4a.keywords.Common.Density, mostCurrent);
+			processBA.raiseEvent2(null, true, "CREATE", true, "b4a.example.opsilainyaa", processBA, activityBA, _activity, anywheresoftware.b4a.keywords.Common.Density, mostCurrent);
 			_activity.reinitializeForShell(activityBA, "activity");
 		}
         initializeProcessGlobals();		
         initializeGlobals();
         
-        BA.LogInfo("** Activity (opsilainya) Create, isFirst = " + isFirst + " **");
+        BA.LogInfo("** Activity (opsilainyaa) Create, isFirst = " + isFirst + " **");
         processBA.raiseEvent2(null, true, "activity_create", false, isFirst);
 		isFirst = false;
 		if (this != mostCurrent)
 			return;
         processBA.setActivityPaused(false);
-        BA.LogInfo("** Activity (opsilainya) Resume **");
+        BA.LogInfo("** Activity (opsilainyaa) Resume **");
         processBA.raiseEvent(null, "activity_resume");
         if (android.os.Build.VERSION.SDK_INT >= 11) {
 			try {
@@ -196,7 +196,7 @@ public class opsilainya extends Activity implements B4AActivity{
 		}
 	}
     public static Class<?> getObject() {
-		return opsilainya.class;
+		return opsilainyaa.class;
 	}
     private Boolean onKeySubExist = null;
     private Boolean onKeyUpSubExist = null;
@@ -268,9 +268,9 @@ public class opsilainya extends Activity implements B4AActivity{
 			return;
 		anywheresoftware.b4a.Msgbox.dismiss(true);
         if (!dontPause)
-            BA.LogInfo("** Activity (opsilainya) Pause, UserClosed = " + activityBA.activity.isFinishing() + " **");
+            BA.LogInfo("** Activity (opsilainyaa) Pause, UserClosed = " + activityBA.activity.isFinishing() + " **");
         else
-            BA.LogInfo("** Activity (opsilainya) Pause event (activity is not paused). **");
+            BA.LogInfo("** Activity (opsilainyaa) Pause event (activity is not paused). **");
         if (mostCurrent != null)
             processBA.raiseEvent2(_activity, true, "activity_pause", false, activityBA.activity.isFinishing());		
         if (!dontPause) {
@@ -307,11 +307,11 @@ public class opsilainya extends Activity implements B4AActivity{
     		this.activity = new WeakReference<Activity>(activity);
     	}
 		public void run() {
-            opsilainya mc = mostCurrent;
+            opsilainyaa mc = mostCurrent;
 			if (mc == null || mc != activity.get())
 				return;
 			processBA.setActivityPaused(false);
-            BA.LogInfo("** Activity (opsilainya) Resume **");
+            BA.LogInfo("** Activity (opsilainyaa) Resume **");
             if (mc != mostCurrent)
                 return;
 		    processBA.raiseEvent(mc._activity, "activity_resume", (Object[])null);
@@ -345,157 +345,141 @@ public static void initializeProcessGlobals() {
             }
 }
 public anywheresoftware.b4a.keywords.Common __c = null;
-public anywheresoftware.b4a.objects.ButtonWrapper _akunwarga = null;
-public anywheresoftware.b4a.objects.ButtonWrapper _arsipdokumen = null;
-public anywheresoftware.b4a.objects.ButtonWrapper _beranda = null;
-public anywheresoftware.b4a.objects.ButtonWrapper _jenisdokumen = null;
-public anywheresoftware.b4a.objects.ButtonWrapper _keluar = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnakunwarga = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnarsipdokumen = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnberanda = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btndatapenduduk = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnjenisdokumen = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnkeluar = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnpengajuan = null;
 public b4a.example.main _main = null;
 public b4a.example.actlogin _actlogin = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
-public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
 public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.datapenduduk _datapenduduk = null;
-public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
 public b4a.example.pengajuan _pengajuan = null;
+public b4a.example.actlupakatasandi _actlupakatasandi = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="opsilainya";
+RDebugUtils.currentModule="opsilainyaa";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=5111808;
- //BA.debugLineNum = 5111808;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=5111810;
- //BA.debugLineNum = 5111810;BA.debugLine="Activity.LoadLayout(\"OpsiLainnya\")";
-mostCurrent._activity.LoadLayout("OpsiLainnya",mostCurrent.activityBA);
-RDebugUtils.currentLine=5111812;
- //BA.debugLineNum = 5111812;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5767168;
+ //BA.debugLineNum = 5767168;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=5767170;
+ //BA.debugLineNum = 5767170;BA.debugLine="Activity.LoadLayout(\"Opsi\")";
+mostCurrent._activity.LoadLayout("Opsi",mostCurrent.activityBA);
+RDebugUtils.currentLine=5767172;
+ //BA.debugLineNum = 5767172;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="opsilainya";
-RDebugUtils.currentLine=5242880;
- //BA.debugLineNum = 5242880;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=5242882;
- //BA.debugLineNum = 5242882;BA.debugLine="End Sub";
+RDebugUtils.currentModule="opsilainyaa";
+RDebugUtils.currentLine=5898240;
+ //BA.debugLineNum = 5898240;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=5898242;
+ //BA.debugLineNum = 5898242;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="opsilainya";
+RDebugUtils.currentModule="opsilainyaa";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=5177344;
- //BA.debugLineNum = 5177344;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=5177346;
- //BA.debugLineNum = 5177346;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5832704;
+ //BA.debugLineNum = 5832704;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=5832706;
+ //BA.debugLineNum = 5832706;BA.debugLine="End Sub";
 return "";
 }
-public static String  _akunwarga_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "akunwarga_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "akunwarga_click", null));}
-RDebugUtils.currentLine=6160384;
- //BA.debugLineNum = 6160384;BA.debugLine="Private Sub AkunWarga_Click";
-RDebugUtils.currentLine=6160385;
- //BA.debugLineNum = 6160385;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=6160386;
- //BA.debugLineNum = 6160386;BA.debugLine="StartActivity(AkunPenduduk)";
+public static String  _btnakunwarga_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnakunwarga_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnakunwarga_click", null));}
+RDebugUtils.currentLine=6422528;
+ //BA.debugLineNum = 6422528;BA.debugLine="Private Sub btnAkunWarga_Click";
+RDebugUtils.currentLine=6422529;
+ //BA.debugLineNum = 6422529;BA.debugLine="StartActivity(AkunPenduduk)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._akunpenduduk.getObject()));
-RDebugUtils.currentLine=6160387;
- //BA.debugLineNum = 6160387;BA.debugLine="End Sub";
+RDebugUtils.currentLine=6422530;
+ //BA.debugLineNum = 6422530;BA.debugLine="End Sub";
 return "";
 }
-public static String  _arsipdokumen_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "arsipdokumen_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "arsipdokumen_click", null));}
+public static String  _btnarsipdokumen_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnarsipdokumen_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnarsipdokumen_click", null));}
+RDebugUtils.currentLine=6356992;
+ //BA.debugLineNum = 6356992;BA.debugLine="Private Sub btnArsipDokumen_Click";
+RDebugUtils.currentLine=6356994;
+ //BA.debugLineNum = 6356994;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnberanda_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnberanda_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnberanda_click", null));}
+RDebugUtils.currentLine=6291456;
+ //BA.debugLineNum = 6291456;BA.debugLine="Private Sub btnBeranda_Click";
+RDebugUtils.currentLine=6291457;
+ //BA.debugLineNum = 6291457;BA.debugLine="StartActivity(actBeranda)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actberanda.getObject()));
+RDebugUtils.currentLine=6291458;
+ //BA.debugLineNum = 6291458;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btndatapenduduk_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btndatapenduduk_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btndatapenduduk_click", null));}
+RDebugUtils.currentLine=6225920;
+ //BA.debugLineNum = 6225920;BA.debugLine="Private Sub btnDataPenduduk_Click";
+RDebugUtils.currentLine=6225921;
+ //BA.debugLineNum = 6225921;BA.debugLine="StartActivity(DataPenduduk)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._datapenduduk.getObject()));
+RDebugUtils.currentLine=6225922;
+ //BA.debugLineNum = 6225922;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnjenisdokumen_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnjenisdokumen_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnjenisdokumen_click", null));}
+RDebugUtils.currentLine=6160384;
+ //BA.debugLineNum = 6160384;BA.debugLine="Private Sub btnJenisDokumen_Click";
+RDebugUtils.currentLine=6160385;
+ //BA.debugLineNum = 6160385;BA.debugLine="StartActivity(TambahDataJenisDokumen)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._tambahdatajenisdokumen.getObject()));
+RDebugUtils.currentLine=6160386;
+ //BA.debugLineNum = 6160386;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnkeluar_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnkeluar_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnkeluar_click", null));}
 RDebugUtils.currentLine=6094848;
- //BA.debugLineNum = 6094848;BA.debugLine="Private Sub ArsipDokumen_Click";
+ //BA.debugLineNum = 6094848;BA.debugLine="Private Sub btnKeluar_Click";
+RDebugUtils.currentLine=6094849;
+ //BA.debugLineNum = 6094849;BA.debugLine="StartActivity(Main)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._main.getObject()));
 RDebugUtils.currentLine=6094850;
  //BA.debugLineNum = 6094850;BA.debugLine="End Sub";
 return "";
 }
-public static String  _beranda_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "beranda_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "beranda_click", null));}
+public static String  _btnpengajuan_click() throws Exception{
+RDebugUtils.currentModule="opsilainyaa";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnpengajuan_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnpengajuan_click", null));}
 RDebugUtils.currentLine=6029312;
- //BA.debugLineNum = 6029312;BA.debugLine="Private Sub Beranda_Click";
+ //BA.debugLineNum = 6029312;BA.debugLine="Private Sub btnPengajuan_Click";
 RDebugUtils.currentLine=6029313;
- //BA.debugLineNum = 6029313;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
+ //BA.debugLineNum = 6029313;BA.debugLine="StartActivity(Pengajuan)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._pengajuan.getObject()));
 RDebugUtils.currentLine=6029314;
- //BA.debugLineNum = 6029314;BA.debugLine="StartActivity(actBeranda)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actberanda.getObject()));
-RDebugUtils.currentLine=6029315;
- //BA.debugLineNum = 6029315;BA.debugLine="End Sub";
-return "";
-}
-public static String  _datapenduduk_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "datapenduduk_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "datapenduduk_click", null));}
-RDebugUtils.currentLine=5963776;
- //BA.debugLineNum = 5963776;BA.debugLine="Private Sub DataPenduduk_Click";
-RDebugUtils.currentLine=5963777;
- //BA.debugLineNum = 5963777;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=5963778;
- //BA.debugLineNum = 5963778;BA.debugLine="StartActivity(DataPenduduk)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._datapenduduk.getObject()));
-RDebugUtils.currentLine=5963779;
- //BA.debugLineNum = 5963779;BA.debugLine="End Sub";
-return "";
-}
-public static String  _jenisdokumen_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "jenisdokumen_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "jenisdokumen_click", null));}
-RDebugUtils.currentLine=5898240;
- //BA.debugLineNum = 5898240;BA.debugLine="Private Sub JenisDokumen_Click";
-RDebugUtils.currentLine=5898241;
- //BA.debugLineNum = 5898241;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=5898242;
- //BA.debugLineNum = 5898242;BA.debugLine="StartActivity(TambahDataJenisDokumen)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._tambahdatajenisdokumen.getObject()));
-RDebugUtils.currentLine=5898243;
- //BA.debugLineNum = 5898243;BA.debugLine="End Sub";
-return "";
-}
-public static String  _keluar_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "keluar_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "keluar_click", null));}
-RDebugUtils.currentLine=5832704;
- //BA.debugLineNum = 5832704;BA.debugLine="Private Sub Keluar_Click";
-RDebugUtils.currentLine=5832705;
- //BA.debugLineNum = 5832705;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=5832706;
- //BA.debugLineNum = 5832706;BA.debugLine="StartActivity(actLogin)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._actlogin.getObject()));
-RDebugUtils.currentLine=5832707;
- //BA.debugLineNum = 5832707;BA.debugLine="End Sub";
-return "";
-}
-public static String  _pengajuan_click() throws Exception{
-RDebugUtils.currentModule="opsilainya";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "pengajuan_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "pengajuan_click", null));}
-RDebugUtils.currentLine=5767168;
- //BA.debugLineNum = 5767168;BA.debugLine="Private Sub Pengajuan_Click";
-RDebugUtils.currentLine=5767169;
- //BA.debugLineNum = 5767169;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=5767170;
- //BA.debugLineNum = 5767170;BA.debugLine="StartActivity(Main)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._main.getObject()));
-RDebugUtils.currentLine=5767171;
- //BA.debugLineNum = 5767171;BA.debugLine="End Sub";
+ //BA.debugLineNum = 6029314;BA.debugLine="End Sub";
 return "";
 }
 }

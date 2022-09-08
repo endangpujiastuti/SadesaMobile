@@ -80,7 +80,7 @@ Private Sub BtnLogin_Click
 			ModulKoneksi.mh.Close
 			
 			Activity.Finish
-			StartActivity(OpsiLainya)
+			StartActivity(OpsiLainyaa)
 		Else
 			MsgboxAsync("Password tidak ditemukan","Info")
 			txtpass.Text = ""

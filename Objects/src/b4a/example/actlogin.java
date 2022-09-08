@@ -355,14 +355,14 @@ public static String _p = "";
 public b4a.example.main _main = null;
 public b4a.example.actberanda _actberanda = null;
 public b4a.example.actregister _actregister = null;
-public b4a.example.actlupakatasandi _actlupakatasandi = null;
 public b4a.example.starter _starter = null;
 public b4a.example.akunpenduduk _akunpenduduk = null;
 public b4a.example.modulkoneksi _modulkoneksi = null;
 public b4a.example.datapenduduk _datapenduduk = null;
-public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
 public b4a.example.pengajuan _pengajuan = null;
-public b4a.example.opsilainya _opsilainya = null;
+public b4a.example.actlupakatasandi _actlupakatasandi = null;
+public b4a.example.tambahdatajenisdokumen _tambahdatajenisdokumen = null;
+public b4a.example.opsilainyaa _opsilainyaa = null;
 public static String  _activity_create(boolean _firesultsttime) throws Exception{
 RDebugUtils.currentModule="actlogin";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
@@ -448,8 +448,8 @@ RDebugUtils.currentLine=851994;
  //BA.debugLineNum = 851994;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
 RDebugUtils.currentLine=851995;
- //BA.debugLineNum = 851995;BA.debugLine="StartActivity(OpsiLainya)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._opsilainya.getObject()));
+ //BA.debugLineNum = 851995;BA.debugLine="StartActivity(OpsiLainyaa)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._opsilainyaa.getObject()));
  }else {
 RDebugUtils.currentLine=851997;
  //BA.debugLineNum = 851997;BA.debugLine="MsgboxAsync(\"Password tidak ditemukan\",\"Info\")";

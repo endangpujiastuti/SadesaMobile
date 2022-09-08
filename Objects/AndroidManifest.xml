@@ -54,14 +54,6 @@
 			android:screenOrientation="unspecified"
 			android:exported="true">
 		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
-			android:name=".actlupakatasandi"
-			android:label="Sadesa Mobile Apps"
-			android:screenOrientation="unspecified"
-			android:exported="true">
-		</activity>
 		<service
 			android:name=".starter"
 			android:exported="true">
@@ -89,14 +81,6 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
-			android:name=".tambahdatajenisdokumen"
-			android:label="Sadesa Mobile Apps"
-			android:screenOrientation="unspecified"
-			android:exported="true">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
 			android:name=".pengajuan"
 			android:label="Sadesa Mobile Apps"
 			android:screenOrientation="unspecified"
@@ -105,7 +89,23 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
-			android:name=".opsilainya"
+			android:name=".actlupakatasandi"
+			android:label="Sadesa Mobile Apps"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".tambahdatajenisdokumen"
+			android:label="Sadesa Mobile Apps"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".opsilainyaa"
 			android:label="Sadesa Mobile Apps"
 			android:screenOrientation="unspecified"
 			android:exported="true">

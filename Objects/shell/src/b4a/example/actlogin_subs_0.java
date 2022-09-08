@@ -112,9 +112,9 @@ actlogin.mostCurrent._modulkoneksi._mh /*RemoteObject*/ .runVoidMethod ("Close")
  BA.debugLineNum = 76;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(2048);
 actlogin.mostCurrent._activity.runVoidMethod ("Finish");
- BA.debugLineNum = 77;BA.debugLine="StartActivity(OpsiLainya)";
+ BA.debugLineNum = 77;BA.debugLine="StartActivity(OpsiLainyaa)";
 Debug.ShouldStop(4096);
-actlogin.mostCurrent.__c.runVoidMethod ("StartActivity",actlogin.processBA,(Object)((actlogin.mostCurrent._opsilainya.getObject())));
+actlogin.mostCurrent.__c.runVoidMethod ("StartActivity",actlogin.processBA,(Object)((actlogin.mostCurrent._opsilainyaa.getObject())));
  }else {
  BA.debugLineNum = 79;BA.debugLine="MsgboxAsync(\"Password tidak ditemukan\",\"Info\")";
 Debug.ShouldStop(16384);

@@ -8,7 +8,7 @@ public class akunpenduduk_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,27);
+		Debug.PushSubsStack("Activity_Create (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,27);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 27;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -46,7 +46,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,46);
+		Debug.PushSubsStack("Activity_Pause (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,46);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 46;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -63,7 +63,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,42);
+		Debug.PushSubsStack("Activity_Resume (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,42);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","activity_resume");}
  BA.debugLineNum = 42;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(512);
@@ -79,7 +79,7 @@ finally {
 		}}
 public static RemoteObject  _btnadd_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnadd_Click (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,84);
+		Debug.PushSubsStack("btnadd_Click (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,84);
 if (RapidSub.canDelegate("btnadd_click")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","btnadd_click");}
  BA.debugLineNum = 84;BA.debugLine="Private Sub btnadd_Click";
 Debug.ShouldStop(524288);
@@ -101,7 +101,7 @@ finally {
 		}}
 public static RemoteObject  _btnback_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnBack_Click (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,89);
+		Debug.PushSubsStack("btnBack_Click (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,89);
 if (RapidSub.canDelegate("btnback_click")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","btnback_click");}
  BA.debugLineNum = 89;BA.debugLine="Private Sub btnBack_Click";
 Debug.ShouldStop(16777216);
@@ -123,7 +123,7 @@ finally {
 		}}
 public static RemoteObject  _btnkembali_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnkembali_Click (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,149);
+		Debug.PushSubsStack("btnkembali_Click (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,149);
 if (RapidSub.canDelegate("btnkembali_click")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","btnkembali_click");}
  BA.debugLineNum = 149;BA.debugLine="Private Sub btnkembali_Click";
 Debug.ShouldStop(1048576);
@@ -145,7 +145,7 @@ finally {
 		}}
 public static RemoteObject  _btnsave_click() throws Exception{
 try {
-		Debug.PushSubsStack("btnSave_Click (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,100);
+		Debug.PushSubsStack("btnSave_Click (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,100);
 if (RapidSub.canDelegate("btnsave_click")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","btnsave_click");}
  BA.debugLineNum = 100;BA.debugLine="Private Sub btnSave_Click";
 Debug.ShouldStop(8);
@@ -218,7 +218,7 @@ finally {
 		}}
 public static RemoteObject  _filterlist() throws Exception{
 try {
-		Debug.PushSubsStack("FilterList (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,70);
+		Debug.PushSubsStack("FilterList (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,70);
 if (RapidSub.canDelegate("filterlist")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","filterlist");}
 int _i = 0;
  BA.debugLineNum = 70;BA.debugLine="Sub FilterList";
@@ -284,7 +284,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _isispinner() throws Exception{
 try {
-		Debug.PushSubsStack("isiSpinner (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,95);
+		Debug.PushSubsStack("isiSpinner (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,95);
 if (RapidSub.canDelegate("isispinner")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","isispinner");}
  BA.debugLineNum = 95;BA.debugLine="Sub isiSpinner";
 Debug.ShouldStop(1073741824);
@@ -311,7 +311,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _search_enterpressed() throws Exception{
 try {
-		Debug.PushSubsStack("search_EnterPressed (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,51);
+		Debug.PushSubsStack("search_EnterPressed (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,51);
 if (RapidSub.canDelegate("search_enterpressed")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","search_enterpressed");}
  BA.debugLineNum = 51;BA.debugLine="Private Sub search_EnterPressed";
 Debug.ShouldStop(262144);
@@ -330,7 +330,7 @@ finally {
 		}}
 public static RemoteObject  _showlist() throws Exception{
 try {
-		Debug.PushSubsStack("showList (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,56);
+		Debug.PushSubsStack("showList (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,56);
 if (RapidSub.canDelegate("showlist")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","showlist");}
 int _i = 0;
  BA.debugLineNum = 56;BA.debugLine="Sub showList";
@@ -376,7 +376,7 @@ finally {
 		}}
 public static RemoteObject  _spnnik_itemclick(RemoteObject _position,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("spnnik_ItemClick (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,154);
+		Debug.PushSubsStack("spnnik_ItemClick (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,154);
 if (RapidSub.canDelegate("spnnik_itemclick")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","spnnik_itemclick", _position, _value);}
 Debug.locals.put("Position", _position);
 Debug.locals.put("Value", _value);
@@ -394,7 +394,7 @@ finally {
 		}}
 public static RemoteObject  _tampilanawal() throws Exception{
 try {
-		Debug.PushSubsStack("tampilanAwal (akunpenduduk) ","akunpenduduk",6,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,137);
+		Debug.PushSubsStack("tampilanAwal (akunpenduduk) ","akunpenduduk",5,akunpenduduk.mostCurrent.activityBA,akunpenduduk.mostCurrent,137);
 if (RapidSub.canDelegate("tampilanawal")) { return b4a.example.akunpenduduk.remoteMe.runUserSub(false, "akunpenduduk","tampilanawal");}
  BA.debugLineNum = 137;BA.debugLine="Sub tampilanAwal";
 Debug.ShouldStop(256);
